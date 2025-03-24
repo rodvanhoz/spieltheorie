@@ -1,0 +1,66 @@
+# Binários compilados pelo Go
+# Ignora qualquer binário gerado pelo comando `go build` ou `go run`
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignora o binário gerado com o mesmo nome do projeto (se você usar `go build`)
+spieltheorie
+
+# Arquivos temporários gerados pelo Go
+# Ignora arquivos temporários criados durante a compilação
+*.test
+*.out
+*.prof
+
+# Diretórios de build e cache
+# Ignora diretórios temporários usados pelo Go
+/bin/
+/tmp/
+
+# Dependências do Go
+# O Go baixa as dependências automaticamente com base no go.mod, então não precisamos rastrear o diretório de módulos
+# No entanto, mantemos o go.mod e go.sum no controle de versão
+vendor/
+
+# Arquivos de log e depuração
+# Ignora arquivos de log ou depuração que você possa gerar
+*.log
+debug
+debug.test
+
+# Arquivos do sistema operacional
+# Ignora arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de editores e IDEs
+# Ignora arquivos de configuração de editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos de teste e cobertura
+# Ignora arquivos gerados por testes e relatórios de cobertura
+coverage.txt
+cover.out
+*.coverprofile
+
+# Arquivos de ambiente
+# Ignora arquivos de configuração de ambiente, se você usar variáveis de ambiente
+.env
+.env.local
+
+# Arquivos de saída ou exportação
+# Ignora arquivos gerados pela aplicação, como exportações de resultados
+*.csv
+*.txt
+output/
+
+# Ignora diretórios de documentação ou builds personalizados
+/docs/
+/dist/
